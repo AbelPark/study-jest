@@ -1,3 +1,5 @@
+// 비동기 함수 테스트
+
 const fn = require("./fn")
 
 // callback 형식
@@ -28,6 +30,5 @@ test("promise", () => {
 
 // async await
 test("async ", async () => {
-  const result = await fn.getAge(30)
-  expect(result).toBe(30)
+  return await expect(fn.getAge(30)).resolves.toBe(30)
 })

@@ -1,4 +1,5 @@
 // 참조 https://jestjs.io/docs/en/expect
+// 기본 matcher 함수 사용법
 
 const fn = require("./fn")
 

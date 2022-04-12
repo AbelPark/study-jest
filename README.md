@@ -40,3 +40,15 @@ npm t 파일명 // 특정파일만 테스트 실행
 > 에러메시지  
 > This usually means that there are asynchronous operations that weren't stopped in your tests. Consider running Jest with `--detectOpenHandles` to troubleshoot this issue.  
 >  비동기 함수 실행시 멈추지 않을 수 있음
+
+## 특징
+
+npm t 파일명 일때
+
+> ex
+
+```sh
+npm t mock
+
+// 으로 실행하면 mock2, mocklog 등등 mock으로 시작하는 모든 파일들이 테스트된다.
+```
